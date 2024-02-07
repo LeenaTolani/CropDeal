@@ -1,0 +1,40 @@
+<div class="outer-box" >
+  
+    <h1>Available Crops</h1>
+  
+    <hr>
+    <h3 *ngIf = "cropsPosted.length === 0"> No Records Found </h3>
+    <table class="table table-striped" *ngIf = "cropsPosted.length !== 0">
+        <thead>
+          <tr>
+          <th>SNO.</th>
+          <th>Crop Name</th>
+          <th>Crop Type</th>
+          <th>Quantity in kg</th>
+          <th>Price per kg</th>
+          <th>Location</th>
+          <th>Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr  *ngFor = "let item of cropsPosted ; let i = index" >
+            <td>{{i+1}}</td>
+            <td>{{item.cropName}}</td>
+            <td>{{item.cropType.cropTypeName}}</td>
+            <td>{{item.quantityInKg}}</td>
+            <td>{{item.pricePerKg}}</td>
+            <td>{{item.location}}</td>
+            <td>
+              <button [routerLink]="['/Farmer','EditCrops',item.cropId]"  class="btn btn-primary" style="width: 100px;">Edit</button>
+              </td>
+          </tr> 
+          
+        </tbody>
+    </table>
+    <div  style="display: flex;justify-content: space-evenly;;">
+      <button style="margin: 10px;" class="add-button" [routerLink]="['/Farmer','AddCrop']" >Post Crop</button>
+      <button style="margin: 10px;" class="add-button" [routerLink]="['/User','Dashboard']" >Back</button>
+    </div>
+    
+  </div>
+  <!-- </div> -->

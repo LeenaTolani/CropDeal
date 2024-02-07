@@ -1,0 +1,85 @@
+
+  .user-Register-form{
+    margin: 0;
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: linear-gradient(#190d7064, #190d7041),url(/assets/images/farm.jpg);
+    background-size: 100% 100%;
+    background-repeat:  no-repeat;
+  }
+
+  .form-group,.form-check {
+    width: 45%;
+    padding: 1%;
+  } 
+
+  /* .form-check, no-bullets{
+    display: flex;
+  } */
+
+  .form-page{
+    margin-top: 30px;
+    padding: 30px;
+    width: 500px; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255) ;
+  }
+  form {
+    font-weight: bold;
+    padding: 5px;
+    background: white;
+    opacity: 0.9;
+    column-count: 2;
+    column-gap: 5%;
+  }
+  .register-page{
+    background : #aaf0a4;
+  }
+  input[type=text],input[type=email],input[type=password]{
+    background-color: transparent;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h4{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .nextline{
+    display: block;
+    margin-top: 20em;
+  }
+  
+  button {
+
+    padding: 10px;
+    padding-top: 5px;
+    background: #3a8d3a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 50%; 
+    margin: auto;
+    margin-top: 12px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
+  button:hover {
+    background:  #016401;
+    font-weight: bold;
+    color:  white;
+  }

@@ -1,0 +1,85 @@
+<div  style="display: flex; flex-direction: column; align-items: center; margin-top: 2%; ">
+  <div class="card" style="display: flex; justify-content: center;">
+    <div style="  background-color : #3a8d3a;padding: 20px; color: white;">
+    <h3 style="text-align: center;justify-content: center;">Edit crop details</h3>
+    </div>
+    <form  [formGroup]="cropForm" (ngSubmit)="submit()">
+
+      <div class="mb-3">
+        <label for="cropType">Select Crop Type:</label>
+        <select class="form-control" id="cropType" name="cropType" formControlName="type" [(ngModel)]="editCrops.cropTypeId">
+          <option  value="0">None</option>
+          <option *ngFor="let item of cropTypes" [ngValue]="item.cropTypeId">{{ item.cropTypeName }}</option>
+        </select>
+          <div *ngIf="cropForm.controls['type'].hasError('required')" class="text-danger">
+            Crop Type Name is Required
+          </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="cropTypeName" class="form-label">Crop Name<br> </label>
+        <input type="text" class="form-control" formControlName="cropName" [(ngModel)]="editCrops.cropName" >
+        <div *ngIf="cropForm.controls['cropName'].touched && cropForm.controls['cropName'].invalid">
+          <div *ngIf="cropForm.controls['cropName'].hasError('required')" class="text-danger">
+            Crop Name is Required
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="cropTypeName" class="form-label" min="1">Quantity(Kgs)<br> </label>
+        
+        <input type="number" class="form-control" formControlName="quantity" [(ngModel)]="editCrops.quantityInKg">
+        
+        <div *ngIf="cropForm.controls['quantity'].touched && cropForm.controls['quantity'].invalid" class="text-danger">
+          Please Enter Quantity
+        </div>
+          <div *ngIf="cropForm.controls['quantity'].hasError('required')" class="text-danger">
+            Please Enter Quantity
+          </div>
+          <div *ngIf="cropForm.controls['quantity'].hasError('min')" class="text-danger">
+            Quantity should be 1 or more Kgs
+          </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="cropTypeName" class="form-label" min="1">Price Per Kg<br> </label>
+        
+        <input type="number" class="form-control" formControlName="price" [(ngModel)]="editCrops.pricePerKg"> 
+        
+        <div *ngIf="cropForm.controls['price'].touched && cropForm.controls['price'].invalid">
+          Price should be greater than zero
+          </div>
+          <div *ngIf="cropForm.controls['price'].hasError('required')" class="text-danger">
+            Price should be greater than zero
+          </div>
+          <div *ngIf="cropForm.controls['price'].hasError('min')" class="text-danger">
+            Price should be greater than zero
+          </div>
+          
+        
+      </div>
+
+      <div class="mb-3">
+        <label for="cropTypeName" class="form-label">Location<br> </label>
+        
+        <input type="text" class="form-control" formControlName="location" [(ngModel)]="editCrops.location">
+        
+        <div *ngIf="cropForm.controls['location'].touched && cropForm.controls['location'].invalid">
+          <div *ngIf="cropForm.controls['location'].hasError('required')" class="text-danger">
+            Crop Type Name is Required
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+      <button type="submit" class="btn btn-primary">Submit</button>    
+      </div>  
+      <div style="text-align: center;">
+      <button class="btn btn-primary" routerLink="/Farmer/GetAllCrops">Back</button>
+      </div>
+    </form>
+  
+  </div>
+
+</div>

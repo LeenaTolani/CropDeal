@@ -1,0 +1,23 @@
+a {
+    font-size:14px;
+    font-weight:700;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+      
+  }
+  .superNav {
+    font-size:13px;
+  }
+  .navbar {
+    background-color: #000000d5; /* Grey color */
+  }
+  /* ::placeholder{
+    color: black;
+    font-size: 10px;
+  } */
+  @media screen and (max-width:540px){
+    .centerOnMobile {
+      text-align:center
+    }
+  }

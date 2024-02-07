@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Crop Deal.props" />
+</Project>

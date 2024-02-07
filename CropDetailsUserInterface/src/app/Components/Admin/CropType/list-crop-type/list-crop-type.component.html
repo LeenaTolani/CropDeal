@@ -1,0 +1,29 @@
+<div class="outer-box" >
+  
+  <h1>Available Crop Types</h1>
+
+  <hr>
+  <table class="table" >
+      <thead>
+        <tr>
+        <th>SNO.</th>
+        <th>CropType Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor = "let item of cropTypes ; let i = index" >
+          <td>{{i+1}}</td>
+          <td>{{item.cropTypeName}}</td>
+          <td>
+            <a [routerLink]="['/Admin','EditCropType',item.cropTypeId]">
+            <button  class="btn btn-primary" style="width: 35%;">Edit</button>
+            </a>
+          </td>
+          <td> <button (click) = "deleteCropType(item.cropTypeId)" class="btn btn-danger" style="width: 30%;">Delete</button></td> 
+        </tr>
+      </tbody>
+  </table>
+  <button style="align-content: right;" class="add-button" [routerLink]="['/Admin','AddCropType']" >Add Crop Type</button>
+</div>

@@ -1,0 +1,198 @@
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\appsettings.json
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.exe
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.deps.json
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.runtimeconfig.json
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.pdb
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.csproj.AssemblyReference.cache
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.AssemblyInfoInputs.cache
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.AssemblyInfo.cs
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.csproj.CoreCompileInputs.cache
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets\msbuild.Crop Deal.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets\msbuild.build.Crop Deal.props
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Crop Deal.props
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Crop Deal.props
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\scopedcss\bundle\Crop Deal.styles.css
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.csproj.CopyComplete
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\refint\Crop Deal.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.pdb
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.genruntimeconfig.cache
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\obj\Debug\net6.0\ref\Crop Deal.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Scrutor.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\MailKit.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\MimeKit.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Formats.Asn1.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Leena\source\repos\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\appsettings.Development.json
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\appsettings.json
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.exe
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.deps.json
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.runtimeconfig.json
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.pdb
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Azure.Core.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Azure.Identity.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Humanizer.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\MailKit.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\MimeKit.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Scrutor.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.CodeDom.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Formats.Asn1.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Memory.Data.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Text.Json.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.csproj.AssemblyReference.cache
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.GeneratedMSBuildEditorConfig.editorconfig
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.AssemblyInfoInputs.cache
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.AssemblyInfo.cs
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.csproj.CoreCompileInputs.cache
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.MvcApplicationPartsAssemblyInfo.cs
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.MvcApplicationPartsAssemblyInfo.cache
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets\msbuild.Crop Deal.Microsoft.AspNetCore.StaticWebAssets.props
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets\msbuild.build.Crop Deal.props
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Crop Deal.props
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Crop Deal.props
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets.pack.json
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets.build.json
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\staticwebassets.development.json
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\scopedcss\bundle\Crop Deal.styles.css
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.csproj.CopyComplete
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.dll
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\refint\Crop Deal.dll
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.pdb
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.genruntimeconfig.cache
+D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\ref\Crop Deal.dll

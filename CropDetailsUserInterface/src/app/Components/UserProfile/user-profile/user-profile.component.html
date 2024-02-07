@@ -1,0 +1,39 @@
+<div style="display: flex; flex-direction: column; align-items: center; vertical-align: middle; margin-top: 5%;"> 
+<div class="contact-container">
+    <div class="contact-photo center"  style="text-align: center; padding: 2%;  ">
+        <img class="resized-image " src="/assets/images/man.png" >
+    </div>
+    <div class="contact-details">
+        <h2>Hey, {{userDetails.name}}</h2>
+        <div class="contact-tag">
+            <label>Username: </label>
+            <span>{{userDetails.userName}}</span>
+        </div>
+        <div class="contact-tag">
+            <label>Name: </label>
+            <span>{{userDetails.name}}</span>
+        </div>
+        <div class="contact-tag">
+            <label>Email </label>
+            <span>{{userDetails.email}}</span>
+        </div><div class="contact-tag">
+            <label>Location:</label>
+            <span>{{userDetails.location}}</span>
+        </div>
+        <div class="contact-tag">
+            <label>Phone Number: </label>
+            <span>{{userDetails.phone}}</span>
+        </div>
+        <div class="contact-tag">
+            <label>Role: </label>
+            <span>{{userDetails.role}}</span>
+        </div>
+        <div style="display: flex; justify-content: space-evenly;">
+            <button style="padding: 2%; margin:5%;  " [routerLink]="['/User/EditMyProfile']"> Edit Profile</button>
+            <button style="padding: 2%; margin:5%;  " routerLink='/User/ViewBankDetails' *ngIf ="role() !== 'admin'">Bank Details</button>
+     <!-- <button class="buy" style="padding: 2%; margin:5%;" *ngIf="userDetails.bankDetails===null"   routerLink= '/User/ViewBankDetails'> Edit Bank Details</button> -->
+        </div>    
+        <!-- <div style="text-align: center;">   -->
+    </div>
+</div>
+</div>

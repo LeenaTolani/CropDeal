@@ -1,0 +1,35 @@
+<div class="outer-box" >
+  
+    <h1>User Details</h1>
+  
+    <hr>
+    <table class="table" >
+        <thead>
+          <tr>
+            <th>SNO.</th>
+            <th>UserName</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Location</th>
+            <th>Phone</th>
+            <th>Role</th>
+            <th>Change Status</th>
+          </tr>
+        </thead> 
+        <tbody>
+          <tr  *ngFor = "let item of userDetails ; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{item.userName}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.location}}</td>
+            <td>{{item.phone}}</td>
+            <td>{{item.role}}</td>
+            <td> 
+              <button  class="btn" style="width: 120px;background-color: #379b37;" (click) ="toggleActivateStatus(item.userId,item)" *ngIf="item.activeStatus" >Activate</button>  
+              <button  class="btn btn-danger"  style="width: 120px;" (click) ="toggleActivateStatus(item.userId,item)" *ngIf="!item.activeStatus">Deactivate</button>
+            </td>  
+          </tr>
+        </tbody>
+    </table>
+  </div>

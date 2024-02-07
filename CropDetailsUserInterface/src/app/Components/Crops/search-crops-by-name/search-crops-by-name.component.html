@@ -1,0 +1,56 @@
+<div style="display: flex; flex-wrap: wrap; justify-content: center;" >
+  <h1 class="text-center mt-4" *ngIf="allcrops.length<=0">
+    Crop Not Found
+  </h1>
+    <div style="display:flex;" *ngFor = "let item of allcrops ; let i = index">
+        <div class="card" style="display:flex; margin: 40px;">
+            
+            <div class="description" style="display:flex;">
+                <div>
+                  <h2 style="color :#198754;">{{item.cropName}}</h2>
+                  <h4>{{item.cropType.cropTypeName}}</h4>
+                  <h1 style="color :#ae1717; font-weight: bold;">Rs.{{item.pricePerKg}}</h1>
+                  <h3>Available Quantity: {{item.quantityInKg}}</h3>
+
+                  
+                  <div class="quantity-button" style="margin: 15px ;display:  flex;height: 43px; border: 1px solid #d9d9d9;" *ngIf = "isRole() === 'dealer'">
+                    <button (click)="minus(i)" style="width: 50px;border: none; background-color: white;">-</button>
+                    <span  style="padding: 10px; align-items: center;justify-content: center;text-align: center;color: black; "  >{{ inputnumber[i] }}</span>
+                    <button (click)="plus(i)" style="width: 50px; border: none ;background-color: white;">+</button>
+                </div>
+
+                <div  style="display: flex;margin-right: 10px;">
+                      <button class="buy-button" style="margin: 15px ;" data-bs-toggle="modal" data-bs-target="#exampleModal" *ngIf = "isRole() === 'dealer'" (click) = "getCropDetailswithCropID(item.cropId,i)">Buy Now</button>   
+                </div>
+                
+                </div>  
+                <div class="photo">
+                    <img src="/assets/images/vege.jpeg">
+                </div>
+            </div>
+        </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Want to Buy the crop</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" *ngIf="reviewCrop">
+            Crop Name:  {{reviewCrop.cropName}}<br><br>
+            Crop Quantity : {{quantity}} <br><br>
+            Crop Price :  RS.{{totalPrice}}<br><br>
+        </div>
+        <div class="modal-footer">
+          <button id="modal-close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)= "submit()" >Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+

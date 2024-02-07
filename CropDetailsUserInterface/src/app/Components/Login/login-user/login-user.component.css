@@ -1,0 +1,67 @@
+
+.user-Register-form{
+  margin: 0;
+  padding: 10px;
+  height: 90.9vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background: linear-gradient(#190d7064, #190d7041),url(/assets/images/farm.jpg);
+  background-size: 100% 100%;
+  background-repeat:  no-repeat;
+}
+.form-page{
+  margin-top: 5px;
+  padding: 30px;
+  width: 500px; 
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background: white ;
+}
+
+.register-page{
+  background : #aaf0a4;
+}
+input[type=text],input[type=email],input[type=password]{
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+}
+form {
+  font-weight: bold;
+  padding: 5px;
+  background: white;
+  opacity: 0.9;
+}
+
+button {
+  padding: 10px;
+  padding-top: 5px;
+  background: #3a8d3a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 50%; 
+  margin: auto;
+  margin-top: 12px;
+  display: block;
+  font-weight: bold;
+}
+
+
+button:hover {
+  background:  #016401;
+  font-weight: bold;
+  color:  white;
+}

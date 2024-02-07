@@ -1,0 +1,46 @@
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+  }
+  
+  form {
+    font-weight: bold;
+    padding: 20px; 
+    background: white;
+    opacity: 0.9;
+  }
+  label{
+    padding: 1%;
+  }
+  
+  input[type="text"] {
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  button, a {
+    padding: 10px 20px; 
+    background: #3a8d3a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 50%;
+    max-width: 200px;
+    margin-top: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  button:hover, a:hover {
+    background: #016401;
+    color: white;
+  }
+  

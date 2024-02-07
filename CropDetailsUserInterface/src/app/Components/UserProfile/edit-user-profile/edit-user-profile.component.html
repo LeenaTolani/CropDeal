@@ -1,0 +1,68 @@
+<div style="display: flex; flex-direction: column; align-items: center; vertical-align: middle; margin-top: 5%;"> 
+    <div class="contact-container">
+        <div class="contact-photo" style="text-align: center; padding: 2%;  ">
+    
+            <img class="resized-image " src="/assets/images/man.png" >
+        </div>
+        <form [formGroup] = "editUserDetailsForm" (ngSubmit)="editUserById()">
+            <div class="contact-details">
+                <h2>Hey {{userDetails.name}}</h2>
+                
+                <div class="contact-tag">
+                    <label>Username: </label>
+                    <span>{{userDetails.userName}}</span>
+                </div>
+                
+                <div class="contact-tag">
+                    <label>Name: </label>
+                    <input type="text" name="Name"  formControlName="name" [(ngModel)] = "userDetails.name">
+                    <div *ngIf="editUserDetailsForm.controls['name'].touched && editUserDetailsForm.controls['name'].invalid">
+                        <div *ngIf="this.editUserDetailsForm.controls['name'].hasError('required')" class="text-danger"> name is Required
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="contact-tag">
+                    <label>Email </label>
+                    <input type="text" name="Email"  formControlName="email" [(ngModel)] = "userDetails.email">
+                    
+                    <div *ngIf="editUserDetailsForm.controls['email'].touched && editUserDetailsForm.controls['email'].invalid">
+                    <div *ngIf="this.editUserDetailsForm.controls['email'].hasError('required')" class="text-danger"> email is Required
+                    </div> <div *ngIf="editUserDetailsForm.get('email')?.errors?.['email']" class="text-danger">
+                        Invalid email format.
+                    </div></div>
+                </div>
+                
+                <div class="contact-tag">
+                    <label>Location:</label>
+                    <input type="text"  name="Location"  formControlName="location" [(ngModel)] = "userDetails.location">
+                    <div *ngIf="editUserDetailsForm.controls['location'].touched && editUserDetailsForm.controls['location'].invalid">
+                        <div *ngIf="this.editUserDetailsForm.controls['location'].hasError('required')" class="text-danger"> Location is Required
+                        </div> 
+                </div>
+
+                </div>
+                
+                <div class="contact-tag">
+                    <label>Phone Number: </label>
+                    <input type="text" name="Phone"  formControlName="phone" [(ngModel)] = "userDetails.phone">
+                    <div *ngIf="editUserDetailsForm.controls['phone'].touched && editUserDetailsForm.controls['phone'].invalid"> Please Enter Valid Data</div>
+                <div *ngIf="editUserDetailsForm.get('phone')?.errors?.['minlength']" class="text-danger">
+                    Phone Number must be at least 10 characters long.
+                </div>
+            </div>
+            <div class="contact-tag">
+                <label>Role: </label>
+                <span type="text" name="Role"  >{{userDetails.role}}</span>
+            </div>
+            
+                <!-- <div class="contact-tag">
+                    <label>Account : </label>
+                    <input type="text">
+                </div> -->
+                <button style="padding: 2%; margin:5%;  width: 30%" > Edit</button>
+                <button style="padding: 2%; margin:5%;  width: 30%" [routerLink]="['/User/Profile']"> Back</button>
+            </div>
+        </form>
+    </div>
+    </div>

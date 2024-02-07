@@ -1,0 +1,106 @@
+<div>
+    <div class="user-Register-form">
+    <div class="container">
+        <h2 style="  color: #ffffff;">Welcome to the Crop Deal</h2>
+        <hr style="background-color: white;">
+        <div style="display: flex; justify-content: center;">
+        <div class="form-page" style=" width: 70%;">
+        <h4>Create New Account</h4>
+            <form [formGroup] = "registrationForm" (ngSubmit) =  "submit()" style="display: flex;flex-wrap: wrap;">
+                <div  class="form-group" style="width: 45%;">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" formControlName="userName" [(ngModel)] ="addUserDto.userName"  required>
+                    <div *ngIf="registrationForm.controls['userName'].touched && registrationForm.controls['userName'].invalid">
+                        <div *ngIf="this.registrationForm.controls['userName'].hasError('required')" class="text-danger"> UserName is Required
+                        </div>  
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" formControlName="name" [(ngModel)] ="addUserDto.name"   required>
+        
+                    <div *ngIf="registrationForm.controls['name'].touched && registrationForm.controls['name'].invalid">
+                        <div *ngIf="this.registrationForm.controls['name'].hasError('required')" class="text-danger"> Name is Required
+                        </div> 
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control"  formControlName="email" [(ngModel)] ="addUserDto.email" required>
+        
+                    <div *ngIf="registrationForm.controls['email'].touched && registrationForm.controls['email'].invalid">
+                        <div *ngIf="this.registrationForm.controls['email'].hasError('required')" class="text-danger"> Email is Required
+                        </div> 
+                        <div *ngIf="registrationForm.get('email')?.errors?.['email']" class="text-danger">
+                            Invalid email format.
+                        </div>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control"  formControlName="password" [(ngModel)] ="addUserDto.password"  required>
+        
+                    <div *ngIf="registrationForm.controls['password'].touched && registrationForm.controls['password'].invalid" class="text-danger">Password is Required
+                        </div>
+
+                        <div *ngIf="registrationForm.get('password')?.errors?.['minlength']" class="text-danger">
+                            Password must contains 1 UpperCase , 1 LowerCase , 1 number and 1 speical symbol.Also, it must be 7 characters long atleast
+                        </div>
+                    </div>
+                
+                
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control"  formControlName="location" [(ngModel)] ="addUserDto.location"  required>
+        
+                    <div *ngIf="registrationForm.controls['location'].touched && registrationForm.controls['location'].invalid">
+                        <div *ngIf="this.registrationForm.controls['location'].hasError('required')" class="text-danger"> Location is Required
+                        </div> 
+                </div>
+                </div>
+        
+            
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control"  formControlName="phone" [(ngModel)] ="addUserDto.phone"  required>
+                    
+                    <div *ngIf="registrationForm.controls['phone'].touched && registrationForm.controls['phone'].invalid" class="text-danger"> Please Enter Valid Data</div>
+                    <div *ngIf="registrationForm.get('phone')?.errors?.['minlength']" class="text-danger">
+                        Phone Number must be at least 10 characters long.
+                    </div>
+                </div>
+
+                <div class="form-check" style="column-count: 3;justify-content: space-evenly; width: 60%;" >
+                    <label class="form-check-label" for="role">Role</label>
+                
+                    <div *ngIf="registrationForm.controls['role'].touched && registrationForm.controls['role'].invalid">
+                    <div *ngIf="registrationForm.controls['role'].hasError('required')" class="text-danger">
+                        Role is Required
+                    </div>
+                    </div>
+                    <div class="no-bullets">
+                        <div>
+                            <input class="radioinput" type="radio" formControlName="role" value="farmer" [(ngModel)]="addUserDto.role">
+                            <label class="radiolabel" for="farmer">Farmer</label>
+                            </div>
+                        
+                            <div>
+                            <input class="radioinput" type="radio" formControlName="role" value="dealer" [(ngModel)]="addUserDto.role">
+                            <label class="radiolabel" for="dealer">Dealer</label>
+                            </div>
+                            <!-- <div>
+                                <input class="radioinput" type="radio" formControlName="role" value="admin" [(ngModel)]="addUserDto.role">
+                                <label class="radiolabel" for="admin">Admin</label>
+                            </div> -->
+                        
+                        </div>
+                </div>
+                <br>
+                <span *ngIf = "registrationForm.invalid && registrationForm.touched">  </span>
+                <button  type="submit" >Register</button> 
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="user-Register-form">
+<div class="container">
+    <h2 style="  color: rgb(255, 249, 249);">Welcome to the Crop Deal</h2>
+    <hr style="background-color: white;">
+    <div style="display: flex; justify-content: center;">
+    <div class="form-page">
+    <h4 style="color: rgb(34, 156, 0);">Create New Account</h4>
+        <form [formGroup] = "loginForm" (ngSubmit) =  "login()">
+            <div  class="form-group">
+                <label for="user">UserName/Email</label>
+                <input type="text" class="form-control" formControlName="user" [(ngModel)] ="userLogin.user"  required>
+                <div *ngIf="loginForm.controls['user'].touched && loginForm.controls['user'].invalid">
+                    <div *ngIf="this.loginForm.controls['user'].hasError('required')" class="text-danger"> User Details is Required
+                    </div>  
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control"  formControlName="password" [(ngModel)] ="userLogin.password"  required>
+                <div *ngIf="loginForm.controls['password'].touched && loginForm.controls['password'].invalid" class="text-danger">Password is Required
+                    </div>
+
+                </div>
+            <span *ngIf = "loginForm.invalid && loginForm.touched">  </span>
+            <button type="submit" >Login</button> 
+        </form>
+    </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,101 @@
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+<div id="container" *ngIf="isRole() === 'farmer'" >	
+	<div class="product-details">
+	<h1>Post Your Crop for sale</h1>
+			<p class="information">Market and trade your crop harvests effortlessly</p>
+      <button class="register-btn" [routerLink]="['/Farmer/GetAllCrops']">Add Crop</button>
+</div>
+<div class="product-image" style="background-image: url('/assets/images/sellcropDashboard.jpg'); background-size: cover; background-position: center;"> 
+  </div>
+</div>
+
+<div id="container" >	
+	<div class="product-details">
+	<h1>Explore Listed Crops</h1>
+			<p class="information">Discover diverse crops: fruits, vegetables, others.</p>
+      <button class="register-btn" [routerLink]="['/User/ViewCrops']">View Crops</button>
+</div>
+<div class="product-image" style="background-image: url('/assets/images/buycropDashboard.jpg'); background-size: cover; background-position: center;">
+</div>
+</div>
+
+<div id="container" *ngIf="isRole() === 'admin'">	
+	<div class="product-details">
+	<h1>Discover a Variety of Crop Types</h1>
+			<p class="information">Browse diverse crop classifications</p>
+      <button class="register-btn" [routerLink]="['/Admin/AllCropType']">CropsType</button>
+</div>
+<div class="product-image" style="background-image: url('/assets/images/cropTypeDashboard.jpg'); background-size: cover; background-position: center;">
+</div>
+</div>
+
+
+<div id="container" *ngIf="isRole() === 'admin'">	
+	<div class="product-details">
+	<h1>Browse All User</h1>
+			<p class="information">Access all user profiles in your account with ease</p>
+      <button class="register-btn" [routerLink]="['/User/Receipt']">Users</button>
+</div>
+<div class="product-image" style="background-image: url('assets/images/allUserDashboard.jpg'); background-size: cover; background-position: center;">
+</div>
+</div>
+
+<div id="container" *ngIf="isRole() !== 'admin'">	
+	<div class="product-details">
+	<h1>Track Your Invoices</h1>
+			<p class="information">View Your Invoices</p>
+      <button class="register-btn" [routerLink]="['/User/Receipt']">Invoice</button>
+</div>
+<div class="product-image" style="background-image: url('/assets/images/InvoiceDashboard.jpg'); background-size: cover; background-position: center;">
+</div>
+</div>
+
+
+<div id="container" *ngIf="isRole() === 'admin'">	
+	<div class="product-details">
+	<h1>Track All Invoices</h1>
+			<p class="information">View All Invoices</p>
+      <button class="register-btn" [routerLink]="['/User/Receipt']">Invoice</button>
+</div>
+<div class="product-image" style="background-image: url('/assets/images/InvoiceDashboard.jpg'); background-size: cover; background-position: center;">
+</div>
+</div>
+
+
+
+</div>
+
+<!-- <div class="container">
+  
+    <h1>Cultivating trust, crop by crop.</h1> -->
+
+
+    <!-- 
+    <div>
+      <h3>Seamlessly buy and sell crops in minutes - connecting farmers and dealers effortlessly. Harvesting efficiency, one transaction at a time.</h3>
+      
+      <div class="image-container">
+        <img src="path/to/your/image.jpg" alt="Image 1">
+        <img src="D:\CG\Case study\CropDetailsUserInterface\src\assets\images\sellimage.png" alt="Image 2">
+      </div>
+      
+      <h3>
+        Ready to cultivate connections and reap the rewards of a digital harvest? <br>
+        Take the leap and join CropConnect today!
+      </h3>
+      
+    </div> -->
+    
+    
+   <!-- <button class="register-btn" [routerLink]="['/User/Profile']" >View Profile</button> -->
+   <!-- <button class="register-btn" *ngIf="isRole() !== 'admin'" [routerLink]="['/User/ViewBankDetails']">Bank Details</button> -->
+   <!-- <button class="register-btn" *ngIf="isRole() === 'farmer'" [routerLink]="['/Farmer/GetAllCrops']">Add Crop </button>
+   <button class="register-btn" [routerLink]="['/User/ViewCrops']">View Crops</button>
+   <button *ngIf="isRole() !== 'admin'" class="register-btn" [routerLink]="['/User/Receipt']">Invoice</button>
+   <button  *ngIf="isRole() === 'admin'" class="register-btn" [routerLink]="['/Admin/AllCropType']">CropType</button>
+   <button *ngIf="isRole() === 'admin'" class="register-btn" [routerLink]="['/Admin/GetInvoice']" >Get All Invoice</button>
+   <button *ngIf="isRole() === 'admin'" class="register-btn" [routerLink]="['/Admin/AllUsers']" >Get All User</button>
+  </div> -->
+
+  

@@ -1,0 +1,18 @@
+<div style="display: block; justify-content: center;  margin-top: 2%">
+
+<h1>Edit New Crop Type</h1>
+<form [formGroup] = "cropTypeForm" (ngSubmit) = "submit()">
+    <div class="mb-3">
+      <label for="cropTypeName" class="form-label" >CropType Name</label>
+      <input type="text" class="form-control"  formControlName = "cropTypeName" [(ngModel)] = "cropType.cropTypeName" >
+      <div *ngIf="cropTypeForm.controls['cropTypeName'].touched && cropTypeForm.controls['cropTypeName'].invalid">
+        <div *ngIf="this.cropTypeForm.controls['cropTypeName'].hasError('required')" class="text-danger">
+                          Crop Type Name is Required
+        </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <br>
+    <button class="btn btn-primary" routerLink="/Admin/AllCropType">Back</button>
+  </form>
+  </div>
