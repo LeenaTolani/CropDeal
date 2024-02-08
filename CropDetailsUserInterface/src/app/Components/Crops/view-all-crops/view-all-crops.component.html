@@ -1,9 +1,9 @@
 <div style="display: flex; flex-wrap: wrap; justify-content: center;" >
-<div class="text-center" *ngIf="allcrops.length<=0">
-  Crop Not Found
-</div>
+<h3 class="text-center mt-4" *ngIf="allcrops.length<=0">
+  Crops are Not Available
+</h3>
     <div style="display:flex;" *ngFor = "let item of allcrops ; let i = index">
-        <div class="card" style="display:flex; margin: 40px;">
+        <div class="card" style="display:flex; margin: 40px;" >
             
             <div class="description" style="display:flex;">
                 <div>

@@ -137,7 +137,8 @@ namespace Crop_Deal.Repository
 
                 var cropsNames = await _context.CropDetails
                     .Include(ct => ct.CropType)
-                    .Where(c => c.CropName.ToLower().Contains(searchTerm.ToLower()))
+                    .Where(c => c.CropName.ToLower().Contains(searchTerm.ToLower()) 
+                    &&  c.QuantityInKg >0)
                     .ToListAsync();
                 return cropsNames;
             }
@@ -183,7 +184,9 @@ namespace Crop_Deal.Repository
         {
             try
             {
-                return await _context.CropDetails.Include(ct => ct.CropType).ToListAsync();
+                return await _context.CropDetails.Include(ct => ct.CropType)
+                    .Where(c=> c.QuantityInKg >0)
+                    .ToListAsync();
             } catch (Exception ex)
             {
                 throw;

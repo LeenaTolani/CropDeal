@@ -3,8 +3,8 @@
     <h1>Available Crops</h1>
   
     <hr>
-    <h3 *ngIf = "cropsPosted.length === 0"> No Records Found </h3>
-    <table class="table table-striped" *ngIf = "cropsPosted.length !== 0">
+    <h3 *ngIf = "cropsPosted.length == 0"> No Crops Available </h3>
+    <table class="table table-striped"  *ngIf = "cropsPosted.length > 0">
         <thead>
           <tr>
           <th>SNO.</th>
@@ -31,7 +31,8 @@
           
         </tbody>
     </table>
-    <div  style="display: flex;justify-content: space-evenly;;">
+    <div  style="display: flex;justify-content: space-evenly;" 
+    >
       <button style="margin: 10px;" class="add-button" [routerLink]="['/Farmer','AddCrop']" >Post Crop</button>
       <button style="margin: 10px;" class="add-button" [routerLink]="['/User','Dashboard']" >Back</button>
     </div>

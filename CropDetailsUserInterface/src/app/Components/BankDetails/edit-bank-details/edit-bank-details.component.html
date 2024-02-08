@@ -4,16 +4,16 @@
 <div class="container">
   <div class="col1" style="padding: 30px; ">
     
-<h4 style="color: #198754; font-weight: bold; text-align: center;padding: 30px;align-items: end ; ">Update Your Bank Details</h4> 
-    <div class="card" style="color: #198754;  font-weight: bold;">
+<h4 style="color: #4caf50; font-weight: bold; text-align: center;padding: 30px;align-items: end ; ">Update Your Bank Details</h4> 
+    <div class="card" style="color: #4caf50;  font-weight: bold;">
       <div class="front">
         <div class="type">
           <img class="bankid"/>
         </div>
         <span class="chip" ></span>
-        <span class="card_number" style="color: #198754;  font-weight: bold;">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
-        <div class="date"><span class="date_value" style="color: #198754;  font-weight: bold;">MM / YYYY</span></div>
-        <span class="fullname" style="color: #198754;  font-weight: bold;">FULL NAME</span>
+        <span class="card_number" style="color: #4caf50;  font-weight: bold;">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+        <div class="date"><span class="date_value" style="color: #4caf50;  font-weight: bold;">MM / YYYY</span></div>
+        <span class="fullname" style="color: #4caf50;  font-weight: bold;">FULL NAME</span>
       </div>
       <div class="back">
         <div class="magnetic"></div>
@@ -25,24 +25,24 @@
   </div>
   <div>
     <form class="col2" [formGroup] = "bankDetailsForm" (ngSubmit)="submit()">
-      <label style="color: #198754;  font-weight: bold;" >Bank Name</label>
+      <label style="color: #4caf50;  font-weight: bold;" >Bank Name</label>
       <input class="number" type="text"  formControlName="bankName" [(ngModel)]="bankDetailsDto.bankName">
       <div class="text-danger" *ngIf="bankDetailsForm.controls['bankName'].touched && bankDetailsForm.controls['bankName'].invalid">
         Bank Name is Required
       </div>
-      <label style="color: #198754;  font-weight: bold;" >Account Number</label>
+      <label style="color: #4caf50;  font-weight: bold;" >Account Number</label>
       <input class="inputname" type="text" formControlName="accountNumber" [(ngModel)]="bankDetailsDto.accountNumber"/>
       <div class="text-danger" *ngIf="bankDetailsForm.controls['accountNumber'].touched && bankDetailsForm.controls['accountNumber'].invalid">
         Account Number is Required
       </div>
-      <label style="color: #198754;  font-weight: bold;" >IFSC Code</label>
+      <label style="color: #4caf50;  font-weight: bold;" >IFSC Code</label>
       <input class="expire" type="text" formControlName="ifscCode" [(ngModel)]="bankDetailsDto.ifscCode"/>
       <div class="text-danger" *ngIf="bankDetailsForm.controls['ifscCode'].touched && bankDetailsForm.controls['ifscCode'].invalid">
         Ifsc Code is Required
       </div>
-      <button class="buy" style="background-color: #198754;  height: 40px;">Update Details</button>
+      <button class="buy" style="background-color: #4caf50;  height: 40px;">Update Details</button>
     </form>
     
-    <button class="buy" style="background-color: #198754;  height: 40px;" routerLink="/User/ViewBankDetails">Back</button>
+    <button class="buy" style="background-color: #4caf50;  height: 40px;" routerLink="/User/ViewBankDetails">Back</button>
 </div>
 </div>

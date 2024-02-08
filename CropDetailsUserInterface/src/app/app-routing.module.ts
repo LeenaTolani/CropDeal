@@ -32,15 +32,22 @@ const routes: Routes = [
   {path:'User/Login' , component: LoginUserComponent}, 
   // {path:'User/Home', component:HomeComponent},
   {path:'User/SearchCrop/:search',component:SearchCropsByNameComponent},
-
-  {path:'User/Dashboard', component:DashboardPageComponent,canActivate:[authenticateGuard]},
-  {path:'User/ViewCrops',component:ViewAllCropsComponent,canActivate:[authenticateGuard]},
-  {path:'User/EditMyProfile',component:EditUserProfileComponent,canActivate:[authenticateGuard]},
-  {path: 'User/Profile' , component:UserProfileComponent,canActivate:[authenticateGuard]},
-  {path:'User/BankDetails',component:AddBankDetailsComponent,canActivate:[authenticateGuard]},
-  {path: 'User/EditBankDetails/:id',component:EditBankDetailsComponent,canActivate:[authenticateGuard]},
-  {path:'User/ViewBankDetails',component:GetBankDetailsComponent,canActivate:[authenticateGuard]},
-  {path:'User/Receipt',component:ViewReceiptComponent,canActivate:[authenticateGuard]},
+  
+  {path:'',
+    runGuardsAndResolvers: 'always',
+    canActivate: [authenticateGuard],
+    data: { roles: ['common'] },
+    children: [    
+      {path:'User/Dashboard', component:DashboardPageComponent},
+      {path:'User/ViewCrops',component:ViewAllCropsComponent},
+      {path:'User/EditMyProfile',component:EditUserProfileComponent},
+      {path: 'User/Profile' , component:UserProfileComponent},
+      {path:'User/BankDetails',component:AddBankDetailsComponent},
+      {path: 'User/EditBankDetails/:id',component:EditBankDetailsComponent},
+      {path:'User/ViewBankDetails',component:GetBankDetailsComponent},
+      {path:'User/Receipt',component:ViewReceiptComponent},
+    ]
+  },
   {path:'',
     runGuardsAndResolvers: 'always',
     canActivate: [authenticateGuard],
@@ -51,7 +58,6 @@ const routes: Routes = [
       {path:'Admin/GetInvoice',component:GetAllInvoiceComponent},
       {path:'Admin/AllUsers',component:GetAllUserDetailsComponent},
       {path:'Admin/AddCropType',component:PostCropTypeComponent},
-      
     ]
   },
   {path:'',
@@ -64,6 +70,7 @@ const routes: Routes = [
       {path:'Farmer/EditCrops/:id',component:EditCropsComponent},
     ]
   },
+
   {path: '**', component:HomeComponent},
 
 ];

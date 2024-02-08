@@ -10,12 +10,8 @@ a {
     font-size:13px;
   }
   .navbar {
-    background-color: #000000d5; /* Grey color */
+    background-color: #000000d5; 
   }
-  /* ::placeholder{
-    color: black;
-    font-size: 10px;
-  } */
   @media screen and (max-width:540px){
     .centerOnMobile {
       text-align:center

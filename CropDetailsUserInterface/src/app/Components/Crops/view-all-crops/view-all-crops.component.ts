@@ -48,7 +48,7 @@ export class ViewAllCropsComponent implements OnInit {
       this.getAllCrops();
       document.getElementById("modal-close")?.click();
       // this.getAllCrops();
-      // window.location.reload();
+      window.location.reload();
     } else{
       this.toastr.warning("Quantity cannot be Zero");
     }

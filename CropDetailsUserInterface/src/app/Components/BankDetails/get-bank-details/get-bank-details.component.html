@@ -4,17 +4,17 @@
     <div class="col1" style="padding: 30px; margin-top: 70px;">
       
     <div style="margin-bottom: 10px;">
-      <h4 style="color: #198754; font-weight: bold; text-align: center; margin-top: 1%;">Bank Details:</h4>     
+      <h4 style="color: #4caf50; font-weight: bold; text-align: center; margin-top: 1%;">Bank Details:</h4>     
     </div> 
-    <div class="card" style="color: #198754;  font-weight: bold;">
+    <div class="card" style="color: #4caf50;  font-weight: bold;">
       <div class="front">
         <div class="type">
           <img class="bankid"/>
         </div>
         <span class="chip" ></span>
-        <span class="card_number" style="color: #198754;  font-weight: bold;">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
-        <div class="date"><span class="date_value" style="color: #198754;  font-weight: bold;">MM / YYYY</span></div>
-        <span class="fullname" style="color: #198754;  font-weight: bold;">FULL NAME</span>
+        <span class="card_number" style="color: #4caf50;  font-weight: bold;">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+        <div class="date"><span class="date_value" style="color: #4caf50;  font-weight: bold;">MM / YYYY</span></div>
+        <span class="fullname" style="color: #4caf50;  font-weight: bold;">FULL NAME</span>
       </div>
       <div class="back">
         <div class="magnetic"></div>
@@ -25,15 +25,15 @@
     </div>
   </div>
   <form class="col2" >
-    <label style="color: #198754;  font-weight: bold;" >Bank Name</label>
+    <label style="color: #4caf50;  font-weight: bold;" >Bank Name</label>
     <input class="number" type="text" value={{bankDetails.bankName}} ng-disabled="all" >
-    <label style="color: #198754;  font-weight: bold;" >Account Number</label>
+    <label style="color: #4caf50;  font-weight: bold;" >Account Number</label>
     <input class="inputname" type="text" value={{bankDetails.accountNumber}} ng-disabled="all" >
-    <label style="color: #198754;  font-weight: bold;" >IFSC Code</label>
+    <label style="color: #4caf50;  font-weight: bold;" >IFSC Code</label>
     <input class="expire" type="text" value={{bankDetails.ifscCode}} ng-disabled="all">
-     <button class="buy" style="background-color: #198754;  height: 40px;"  [routerLink]="['/User','EditBankDetails',bankDetails.accountId]" *ngIf="bankDetails.accountId !== 0">Edit Details</button>   
+     <button class="buy" style="background-color: #4caf50;  height: 40px;"  [routerLink]="['/User','EditBankDetails',bankDetails.accountId]" *ngIf="bankDetails.accountId !== 0">Edit Details</button>   
      
-     <button class="buy" style="background-color: #198754;  height: 40px;"  [routerLink]="['/User','BankDetails']" *ngIf="bankDetails.accountId === 0">Add Details</button>   
-     <button class="buy" style="background-color: #198754;  height: 40px;"  [routerLink]="['/User','Profile']">Back</button>
+     <button class="buy" style="background-color: #4caf50;  height: 40px;"  routerLink='/User/BankDetails' *ngIf="bankDetails.accountId === 0">Add Details</button>   
+     <button class="buy" style="background-color: #4caf50;  height: 40px;"  routerLink="/UserProfile">Back</button>
  </form>
 </div>
