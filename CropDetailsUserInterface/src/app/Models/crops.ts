@@ -4,8 +4,7 @@ export interface cropsDTO{
     pricePerKg : number,
     location : string,
     cropTypeId : number,
-    userId : number,
-    // cropPicture :any
+    userId : number
 }
 
 export interface crops{
@@ -19,5 +18,26 @@ export interface crops{
     cropType :any,
     userId :number,
     user :any,
-    // cropPicture :any
+    cropImageUrl :any
+}
+
+export interface postCropsDTO{
+    cropName : string,
+    quantityInKg : number,
+    pricePerKg : number,
+    location : string,
+    cropTypeId : number,
+    userId : number,
+    cropImage :any
+}
+
+
+export interface postCropsDTO{
+    cropName : string,
+    quantityInKg : number,
+    pricePerKg : number,
+    location : string,
+    cropTypeId : number,
+    userId : number,
+    cropImage :any
 }

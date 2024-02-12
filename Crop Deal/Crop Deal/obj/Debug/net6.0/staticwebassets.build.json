@@ -1,11 +1,54 @@
 {
   "Version": 1,
-  "Hash": "EggniAyo5HJPA6YZMcxxq22h28BXD/mif7aOpJUGVAY=",
+  "Hash": "nSz1A0UGr7qaRxe/1xFRX1VZEoJMQ+q/wEX6ezebX0E=",
   "Source": "Crop Deal",
   "BasePath": "_content/Crop Deal",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Crop Deal\\wwwroot",
+      "Source": "Crop Deal",
+      "ContentRoot": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\",
+      "BasePath": "_content/Crop Deal",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\7f6fb58c-2b2c-4a3f-b070-59140ba421af_vege.jpeg",
+      "SourceId": "Crop Deal",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\",
+      "BasePath": "_content/Crop Deal",
+      "RelativePath": "CropsImages/7f6fb58c-2b2c-4a3f-b070-59140ba421af_vege.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CropsImages\\7f6fb58c-2b2c-4a3f-b070-59140ba421af_vege.jpeg"
+    },
+    {
+      "Identity": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\ee13111e-c4c3-4983-822a-67ee38ed9ad8_grapes.jpg",
+      "SourceId": "Crop Deal",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\",
+      "BasePath": "_content/Crop Deal",
+      "RelativePath": "CropsImages/ee13111e-c4c3-4983-822a-67ee38ed9ad8_grapes.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CropsImages\\ee13111e-c4c3-4983-822a-67ee38ed9ad8_grapes.jpg"
+    }
+  ]
 }

@@ -23,6 +23,9 @@ namespace Crop_Deal.Model.Domain
         [ForeignKey("Farmer")]
         public int UserId { get; set; }
         public User User { get; set; }
+        public string CropImageUrl { get; set; }
+        [NotMapped]
+        public IFormFile CropImage { get; set; }
 
     }
 }

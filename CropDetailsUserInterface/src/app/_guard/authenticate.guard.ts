@@ -18,7 +18,7 @@ export class authenticateGuard implements CanActivate {
       if(allowedRoles === user ){
         return true;
       } 
-      else if( allowedRoles === "common" ){
+      else if( allowedRoles === "common" && this.authService.isLoggedIn()){
         return true;
       }
       return this.router.parseUrl('/User/Home');

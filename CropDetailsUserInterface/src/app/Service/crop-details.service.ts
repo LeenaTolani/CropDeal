@@ -12,7 +12,7 @@ export class CropDetailsService {
   baseurl = 'https://localhost:44397/';
   constructor(private http: HttpClient, private authService : AuthenticationService) { }
 
-  addCrop(cropsDto : cropsDTO){
+  addCrop(cropsDto : any){
     let token = this.authService.getToken();
     let headers = new HttpHeaders({
       "Authorization"  : `Bearer ${token}`

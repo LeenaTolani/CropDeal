@@ -196,3 +196,4 @@ D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\refint\Crop Deal.dll
 D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.pdb
 D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\Crop Deal.genruntimeconfig.cache
 D:\CG\Case study\Crop Deal\Crop Deal\obj\Debug\net6.0\ref\Crop Deal.dll
+D:\CG\Case study\Crop Deal\Crop Deal\bin\Debug\net6.0\Crop Deal.staticwebassets.runtime.json

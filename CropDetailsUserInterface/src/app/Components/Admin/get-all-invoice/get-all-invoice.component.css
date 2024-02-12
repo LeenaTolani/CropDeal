@@ -12,3 +12,9 @@
         border: 0 solid rgba(0,0,0,.125);
         border-radius: 1rem;
     }
+
+    h1,h3{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }

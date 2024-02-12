@@ -27,7 +27,7 @@ namespace Crop_Deal.Controllers
         [Authorize(Roles = "farmer")]
         [HttpPost]
         [Route("AddCropDetails")]
-        public async Task<ActionResult> AddCrop(CropDetailsDTO crop)
+        public async Task<ActionResult> AddCrop([FromForm] PostCropDetailsDTO crop)
         {
             try
             {

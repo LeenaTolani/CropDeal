@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Crop_Deal.Migrations
 {
     [DbContext(typeof(CropDetailDbContext))]
-    [Migration("20240116045937_ThirdMigration")]
-    partial class ThirdMigration
+    [Migration("20240211183335_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -81,6 +81,10 @@ namespace Crop_Deal.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CropId"));
 
+                    b.Property<string>("CropImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CropName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -92,10 +96,10 @@ namespace Crop_Deal.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
+                    b.Property<double>("PricePerKg")
                         .HasColumnType("float");
 
-                    b.Property<double>("Quantity")
+                    b.Property<double>("QuantityInKg")
                         .HasColumnType("float");
 
                     b.Property<int>("UserId")
@@ -118,9 +122,6 @@ namespace Crop_Deal.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReciptId"));
 
-                    b.Property<int>("CropDetailsCropId")
-                        .HasColumnType("int");
-
                     b.Property<int>("CropId")
                         .HasColumnType("int");
 
@@ -136,18 +137,18 @@ namespace Crop_Deal.Migrations
                     b.Property<int>("QuantityRequired")
                         .HasColumnType("int");
 
-                    b.Property<int>("TotalAmount")
-                        .HasColumnType("int");
+                    b.Property<double>("TotalAmount")
+                        .HasColumnType("float");
 
                     b.HasKey("ReciptId");
 
-                    b.HasIndex("CropDetailsCropId");
+                    b.HasIndex("CropId");
 
                     b.HasIndex("DealerId");
 
                     b.HasIndex("FarmerId");
 
-                    b.ToTable("Recipt");
+                    b.ToTable("Receipt");
                 });
 
             modelBuilder.Entity("Crop_Deal.Model.Domain.Subscribe", b =>
@@ -255,9 +256,8 @@ namespace Crop_Deal.Migrations
             modelBuilder.Entity("Crop_Deal.Model.Domain.Receipt", b =>
                 {
                     b.HasOne("Crop_Deal.Model.Domain.CropDetails", "CropDetails")
-                        .WithMany("Recipts")
-                        .HasForeignKey("CropDetailsCropId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .WithMany("Receipt")
+                        .HasForeignKey("CropId")
                         .IsRequired();
 
                     b.HasOne("Crop_Deal.Model.Domain.User", "DealerUser")
@@ -305,7 +305,7 @@ namespace Crop_Deal.Migrations
 
             modelBuilder.Entity("Crop_Deal.Model.Domain.CropDetails", b =>
                 {
-                    b.Navigation("Recipts");
+                    b.Navigation("Receipt");
                 });
 
             modelBuilder.Entity("Crop_Deal.Model.Domain.User", b =>

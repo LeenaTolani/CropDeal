@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Crop_Deal.Migrations
 {
     /// <inheritdoc />
-    public partial class InitalMigration : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,13 +15,13 @@ namespace Crop_Deal.Migrations
                 name: "CropTypes",
                 columns: table => new
                 {
-                    CropId = table.Column<int>(type: "int", nullable: false)
+                    CropTypeId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CropTypeName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CropTypes", x => x.CropId);
+                    table.PrimaryKey("PK_CropTypes", x => x.CropTypeId);
                 });
 
             migrationBuilder.CreateTable(
@@ -30,13 +30,12 @@ namespace Crop_Deal.Migrations
                 {
                     UserId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserName = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ConfirmPassword = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ActiveStatus = table.Column<bool>(type: "bit", nullable: false),
-                    location = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Role = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Phone = table.Column<double>(type: "float", nullable: false)
                 },
@@ -49,16 +48,16 @@ namespace Crop_Deal.Migrations
                 name: "BankDetails",
                 columns: table => new
                 {
-                    Account_Id = table.Column<int>(type: "int", nullable: false)
+                    AccountId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AccountNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BankName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    IfscCode = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    IfscCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BankDetails", x => x.Account_Id);
+                    table.PrimaryKey("PK_BankDetails", x => x.AccountId);
                     table.ForeignKey(
                         name: "FK_BankDetails_Users_UserId",
                         column: x => x.UserId,
@@ -73,12 +72,13 @@ namespace Crop_Deal.Migrations
                 {
                     CropId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CropTypeId = table.Column<int>(type: "int", nullable: false),
                     CropName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    QuantityInKg = table.Column<double>(type: "float", nullable: false),
+                    PricePerKg = table.Column<double>(type: "float", nullable: false),
+                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CropTypeId = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    Quantity = table.Column<double>(type: "float", nullable: false),
-                    Price = table.Column<double>(type: "float", nullable: false),
-                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    CropImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -87,7 +87,7 @@ namespace Crop_Deal.Migrations
                         name: "FK_CropDetails_CropTypes_CropTypeId",
                         column: x => x.CropTypeId,
                         principalTable: "CropTypes",
-                        principalColumn: "CropId",
+                        principalColumn: "CropTypeId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_CropDetails_Users_UserId",
@@ -114,7 +114,7 @@ namespace Crop_Deal.Migrations
                         name: "FK_Subscribes_CropTypes_CropTypeId",
                         column: x => x.CropTypeId,
                         principalTable: "CropTypes",
-                        principalColumn: "CropId",
+                        principalColumn: "CropTypeId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Subscribes_Users_UserId",
@@ -125,35 +125,33 @@ namespace Crop_Deal.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Recipt",
+                name: "Receipt",
                 columns: table => new
                 {
                     ReciptId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FarmerId = table.Column<int>(type: "int", nullable: false),
                     DealerId = table.Column<int>(type: "int", nullable: false),
-                    CropId = table.Column<int>(type: "int", nullable: false),
-                    CropDetailsCropId = table.Column<int>(type: "int", nullable: false),
-                    TotalAmount = table.Column<int>(type: "int", nullable: false),
+                    TotalAmount = table.Column<double>(type: "float", nullable: false),
                     QuantityRequired = table.Column<int>(type: "int", nullable: false),
-                    DealDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    DealDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CropId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Recipt", x => x.ReciptId);
+                    table.PrimaryKey("PK_Receipt", x => x.ReciptId);
                     table.ForeignKey(
-                        name: "FK_Recipt_CropDetails_CropDetailsCropId",
-                        column: x => x.CropDetailsCropId,
+                        name: "FK_Receipt_CropDetails_CropId",
+                        column: x => x.CropId,
                         principalTable: "CropDetails",
-                        principalColumn: "CropId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "CropId");
                     table.ForeignKey(
-                        name: "FK_Recipt_Users_DealerId",
+                        name: "FK_Receipt_Users_DealerId",
                         column: x => x.DealerId,
                         principalTable: "Users",
                         principalColumn: "UserId");
                     table.ForeignKey(
-                        name: "FK_Recipt_Users_FarmerId",
+                        name: "FK_Receipt_Users_FarmerId",
                         column: x => x.FarmerId,
                         principalTable: "Users",
                         principalColumn: "UserId");
@@ -176,18 +174,18 @@ namespace Crop_Deal.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Recipt_CropDetailsCropId",
-                table: "Recipt",
-                column: "CropDetailsCropId");
+                name: "IX_Receipt_CropId",
+                table: "Receipt",
+                column: "CropId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Recipt_DealerId",
-                table: "Recipt",
+                name: "IX_Receipt_DealerId",
+                table: "Receipt",
                 column: "DealerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Recipt_FarmerId",
-                table: "Recipt",
+                name: "IX_Receipt_FarmerId",
+                table: "Receipt",
                 column: "FarmerId");
 
             migrationBuilder.CreateIndex(
@@ -199,6 +197,12 @@ namespace Crop_Deal.Migrations
                 name: "IX_Subscribes_UserId",
                 table: "Subscribes",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Users_UserName",
+                table: "Users",
+                column: "UserName",
+                unique: true);
         }
 
         /// <inheritdoc />
@@ -208,7 +212,7 @@ namespace Crop_Deal.Migrations
                 name: "BankDetails");
 
             migrationBuilder.DropTable(
-                name: "Recipt");
+                name: "Receipt");
 
             migrationBuilder.DropTable(
                 name: "Subscribes");

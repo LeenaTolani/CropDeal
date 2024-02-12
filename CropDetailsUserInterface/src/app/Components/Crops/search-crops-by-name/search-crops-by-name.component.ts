@@ -13,7 +13,7 @@ import { ReceiptService } from 'src/app/Service/receipt.service';
 })
 export class SearchCropsByNameComponent implements OnInit {
   
-
+  imageUrl = this.cropService.baseurl;
   allcrops : crops [] = [];
   inputnumber : { [key: number]: number } = {};
   reviewCrop:any;

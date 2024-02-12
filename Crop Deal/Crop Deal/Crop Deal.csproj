@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <Folder Include="Filter\" />
+    <Folder Include="wwwroot\CropsImages\" />
   </ItemGroup>
 
 </Project>

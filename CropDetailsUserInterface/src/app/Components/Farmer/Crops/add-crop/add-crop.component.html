@@ -68,17 +68,38 @@
         
         <div *ngIf="cropForm.controls['location'].touched && cropForm.controls['location'].invalid">
           <div *ngIf="cropForm.controls['location'].hasError('required')" class="text-danger">
-            Crop Type Name is Required
+            Location is Required
           </div>
         </div>
       </div>
 
-  
+      <div class="mb-3">
+        <label for="cropTypeName" class="form-label">Crop Image<br> </label>
+        
+        <input 
+              class="form-control" 
+              type="file" 
+              accept="image/png, image/jpg, image/jpeg"
+              id="imageFile" 
+              name="imageFile"
+              formControlName="image"
+              [(ngModel)]="addcrops.cropImage"
+              (change)="onSelectFile($event)"
+              >
+              
+        <div *ngIf="cropForm.controls['image'].touched && cropForm.controls['image'].invalid">
+          <div *ngIf="cropForm.controls['image'].hasError('required')" class="text-danger">
+            Crop Image is Required
+          </div>
+        </div>
+      </div>
+
       <div style="display: flex; justify-content: space-evenly;">
         <button type="submit" class="btn btn-primary">Submit</button>      
         <br>
         <button class="btn btn-primary" routerLink="/Farmer/GetAllCrops">Back</button>
       </div>
+      
     </form>
   </div>
   </div>

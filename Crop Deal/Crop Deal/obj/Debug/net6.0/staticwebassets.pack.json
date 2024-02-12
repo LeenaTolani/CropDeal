@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\7f6fb58c-2b2c-4a3f-b070-59140ba421af_vege.jpeg",
+      "PackagePath": "staticwebassets\\CropsImages\\7f6fb58c-2b2c-4a3f-b070-59140ba421af_vege.jpeg"
+    },
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\ee13111e-c4c3-4983-822a-67ee38ed9ad8_grapes.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\ee13111e-c4c3-4983-822a-67ee38ed9ad8_grapes.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Crop Deal.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Crop Deal.props",
+      "PackagePath": "build\\Crop Deal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Crop Deal.props",
+      "PackagePath": "buildMultiTargeting\\Crop Deal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Crop Deal.props",
+      "PackagePath": "buildTransitive\\Crop Deal.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

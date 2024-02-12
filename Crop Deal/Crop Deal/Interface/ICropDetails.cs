@@ -5,7 +5,7 @@ namespace Crop_Deal.Interface
 {
     public interface ICropDetails
     {
-        Task<bool> AddCrop(CropDetailsDTO crop);
+        Task<bool> AddCrop(PostCropDetailsDTO crop);
         Task<bool> UpdateCrop(int cropId, CropDetailsDTO crop);
         Task<CropDetails> GetCropDetailsById(int cropid);
         Task<IEnumerable<CropDetails>> GetAllCropsDetails();

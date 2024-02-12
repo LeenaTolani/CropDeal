@@ -27,7 +27,7 @@ export class AddNewUserComponent {
     userName : new  FormControl('',[Validators.required]),
     name :  new  FormControl('',[Validators.required]),
     email :  new  FormControl('', [Validators.required, Validators.email]),
-    password :  new  FormControl('', [Validators.required, Validators.minLength(7)]),
+    password: new FormControl('', [Validators.required, Validators.pattern(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*#?&^_-]).{8,}/i)]),
     location :  new  FormControl('',[Validators.required]),
     role :  new  FormControl('',[Validators.required]),
     phone :  new  FormControl('', [Validators.required, Validators.minLength(10)])

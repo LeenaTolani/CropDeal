@@ -4,41 +4,57 @@ using Crop_Deal.Model.Domain;
 using Crop_Deal.Model.DTO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
+using System;
 
 namespace Crop_Deal.Repository
 {
     public class CropDetailsRepo : ICropDetails
     {
-        public readonly CropDetailDbContext _context;
-        public CropDetailsRepo(CropDetailDbContext context)
+        private readonly CropDetailDbContext _context;
+        private readonly IWebHostEnvironment _environment;
+        public CropDetailsRepo(CropDetailDbContext context, IWebHostEnvironment environment)
         {
             _context = context;
+            _environment = environment;
         }
 
         #region Adding Crop by the farmer to sell
-        public async Task<bool> AddCrop(CropDetailsDTO crop)
+        public async Task<bool> AddCrop(PostCropDetailsDTO crop)
         {
             try
             {
-                if (crop == null)
+                //if (crop == null)
+                //{
+                //  return false;
+                //}
+
+                if (crop != null && crop.CropImage != null)
                 {
-                    return false;
+                    string? uniqueFilename = null;
+                    string ImageUploadedFolder = Path.Combine(_environment.WebRootPath, "CropsImages");
+                    uniqueFilename = Guid.NewGuid().ToString() + "_" + crop.CropImage.FileName;
+                    string filePath = Path.Combine(ImageUploadedFolder, uniqueFilename);
+                    using (var fileStram = new FileStream(filePath, FileMode.Create))
+                    {
+                        crop.CropImage.CopyTo(fileStram);
+                    }
+
+                    var addCropDetails = new CropDetails
+                    {
+                        CropName = crop.CropName,
+                        QuantityInKg = crop.QuantityInKg,
+                        PricePerKg = crop.PricePerKg,
+                        Location = crop.Location,
+                        CropTypeId = crop.CropTypeId,
+                        UserId = crop.UserId,
+                        CropImageUrl = "CropsImages/"+ uniqueFilename
+
+                    };
+                    await _context.CropDetails.AddAsync(addCropDetails);
+                    await _context.SaveChangesAsync();
+                    return true;
                 }
-
-                var addCropDetails = new CropDetails
-                {
-                    CropName = crop.CropName,
-                    QuantityInKg = crop.QuantityInKg,
-                    PricePerKg = crop.PricePerKg,
-                    Location = crop.Location,
-                    CropTypeId = crop.CropTypeId,
-                    UserId = crop.UserId
-
-                };
-                await _context.CropDetails.AddAsync(addCropDetails);
-                await _context.SaveChangesAsync();
-                return true;
-
+                return false;
             }
             catch (Exception ex)
             {

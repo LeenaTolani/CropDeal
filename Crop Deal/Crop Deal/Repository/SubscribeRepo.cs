@@ -27,7 +27,7 @@ namespace Crop_Deal.Repository
                 {
                     Subscriber = subscribe.Subscriber,
                     UserId = subscribe.UserId,
-                    CropTypeId = subscribe.CropTypeId
+                    //CropTypeId = subscribe.CropTypeId
                 };
                 await _context.Subscribes.AddAsync(addSubscriber);
                 await _context.SaveChangesAsync();
@@ -122,7 +122,7 @@ namespace Crop_Deal.Repository
                 {
                     updateSubscriber.Subscriber = subscribe.Subscriber;
                     updateSubscriber.UserId = subscribe.UserId;
-                    updateSubscriber.CropTypeId = subscribe.CropTypeId;
+                   // updateSubscriber.CropTypeId = subscribe.CropTypeId;
                     await _context.SaveChangesAsync();
                     return true;
                 }

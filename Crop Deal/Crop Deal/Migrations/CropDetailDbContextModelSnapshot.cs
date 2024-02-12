@@ -78,6 +78,10 @@ namespace Crop_Deal.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CropId"));
 
+                    b.Property<string>("CropImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CropName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

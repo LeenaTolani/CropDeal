@@ -12,7 +12,7 @@ declare var $: any;
   styleUrls: ['./view-all-crops.component.css']
 })
 export class ViewAllCropsComponent implements OnInit {
-  
+  imageUrl = this.cropService.baseurl;
 
   allcrops : crops [] = [];
   inputnumber : { [key: number]: number } = {};

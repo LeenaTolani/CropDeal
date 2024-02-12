@@ -15,7 +15,7 @@ namespace Crop_Deal.Services
         }
 
         #region Adding Crop by the farmer to sell
-        public async Task<bool> AddCrop(CropDetailsDTO crop)
+        public async Task<bool> AddCrop(PostCropDetailsDTO crop)
         {
             try
             {
