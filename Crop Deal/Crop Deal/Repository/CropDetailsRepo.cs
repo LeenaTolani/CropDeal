@@ -12,10 +12,12 @@ namespace Crop_Deal.Repository
     {
         private readonly CropDetailDbContext _context;
         private readonly IWebHostEnvironment _environment;
-        public CropDetailsRepo(CropDetailDbContext context, IWebHostEnvironment environment)
+        private readonly ISubscribe _subscribeRepo;
+        public CropDetailsRepo(CropDetailDbContext context, IWebHostEnvironment environment, ISubscribe subscribeRepo)
         {
             _context = context;
             _environment = environment;
+            _subscribeRepo = subscribeRepo;
         }
 
         #region Adding Crop by the farmer to sell
@@ -52,6 +54,7 @@ namespace Crop_Deal.Repository
                     };
                     await _context.CropDetails.AddAsync(addCropDetails);
                     await _context.SaveChangesAsync();
+                    await _subscribeRepo.SubscriptionNotification();
                     return true;
                 }
                 return false;

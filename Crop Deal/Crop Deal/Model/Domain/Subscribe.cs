@@ -14,10 +14,6 @@ namespace Crop_Deal.Model.Domain
         [ForeignKey("UserId")]
         public int UserId { get; set; }
         public User User { get; set; }
-        [Required]
-        [ForeignKey("CropTypeId")]
-        public int CropTypeId { get; set; }
-        public CropType CropTypes { get; set; }
-
+       
     }
 }

@@ -8,6 +8,6 @@ namespace Crop_Deal.Model.DTO
     {
         public bool Subscriber { get; set; }
         public int UserId { get; set; }
-        public int CropTypeId { get; set; }
+        //public int CropTypeId { get; set; }
     }
 }

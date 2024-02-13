@@ -1,5 +1,4 @@
 ﻿using Crop_Deal.Model.DTO;
-using Crop_Deal.Model;
 using Crop_Deal.Model.Domain;
 
 namespace Crop_Deal.Interface
@@ -11,6 +10,8 @@ namespace Crop_Deal.Interface
         Task<Subscribe> GetSubscribeToCrop(int subscribeid);
         Task<IEnumerable<Subscribe>> GetAllSubscriberToCrop();
         Task<bool> DeleteSubscribeToCrop(int subscribeid);
-        Task<Subscribe> GetSubscribeToCropByUserId(int userid);
+        Task SubscriptionNotification();
+        Task<Subscribe> SubscribeByUserId(int id); 
+
     }
 }

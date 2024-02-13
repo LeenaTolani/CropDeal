@@ -62,7 +62,7 @@ builder.Services.AddScoped<SubscribeServices, SubscribeServices>();
 //Login Dependency Injection
 builder.Services.AddScoped<ILogin, LoginRepo>();
 builder.Services.AddScoped<LoginService, LoginService>();
-//Login Dependency Injection
+// Receipt Dependency Injection
 builder.Services.AddScoped<IReceipt, ReceiptRepo>();
 builder.Services.AddScoped<ReceiptServices, ReceiptServices>();
 

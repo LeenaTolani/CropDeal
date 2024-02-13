@@ -13,7 +13,7 @@ namespace Crop_Deal.Model
         [RegularExpression("^(vegetable|friuts|other)", ErrorMessage = "Invalid ")]
         public string CropTypeName { get; set;}
         public IEnumerable<CropDetails> CropDetail { get; set; }
-        public IEnumerable<Subscribe> Subscribes { get; set; }
+        //public IEnumerable<Subscribe> Subscribes { get; set; }
 
     }
 }

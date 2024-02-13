@@ -1,8 +1,48 @@
 {
   "Files": [
     {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\0a8d517d-a8c9-40ca-b3e4-37ac2b7f51bd_Capcicum.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\0a8d517d-a8c9-40ca-b3e4-37ac2b7f51bd_Capcicum.jpg"
+    },
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\2e34655a-1c9e-4a2a-87d5-469bb42e1a33_Potato.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\2e34655a-1c9e-4a2a-87d5-469bb42e1a33_Potato.jpg"
+    },
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\306d5098-c144-4af3-856b-d98472b28c9f_Kiwi.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\306d5098-c144-4af3-856b-d98472b28c9f_Kiwi.jpg"
+    },
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\31ec53a9-726a-4617-a0cf-9db409e2fcdb_rice.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\31ec53a9-726a-4617-a0cf-9db409e2fcdb_rice.jpg"
+    },
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\4205f526-95ad-4e60-8da8-2af9f51b6abc_grapes.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\4205f526-95ad-4e60-8da8-2af9f51b6abc_grapes.jpg"
+    },
+    {
       "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\7f6fb58c-2b2c-4a3f-b070-59140ba421af_vege.jpeg",
       "PackagePath": "staticwebassets\\CropsImages\\7f6fb58c-2b2c-4a3f-b070-59140ba421af_vege.jpeg"
+    },
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\82e92c97-657c-41af-b88c-2ff442efd0c2_cabbage.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\82e92c97-657c-41af-b88c-2ff442efd0c2_cabbage.jpg"
+    },
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\9e5a87fe-2399-4ac8-af51-f4fa70962275_wheat.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\9e5a87fe-2399-4ac8-af51-f4fa70962275_wheat.jpg"
+    },
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\9ee4b4c4-4164-4303-a6e0-698760b38424_orange.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\9ee4b4c4-4164-4303-a6e0-698760b38424_orange.jpg"
+    },
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\a1e82191-ce56-48ca-b6d3-784acdcb54c9_pineapple.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\a1e82191-ce56-48ca-b6d3-784acdcb54c9_pineapple.jpg"
+    },
+    {
+      "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\a5766ec9-1249-4ba7-891f-6be48c488d2c_wheat.jpg",
+      "PackagePath": "staticwebassets\\CropsImages\\a5766ec9-1249-4ba7-891f-6be48c488d2c_wheat.jpg"
     },
     {
       "Id": "D:\\CG\\Case study\\Crop Deal\\Crop Deal\\wwwroot\\CropsImages\\ee13111e-c4c3-4983-822a-67ee38ed9ad8_grapes.jpg",

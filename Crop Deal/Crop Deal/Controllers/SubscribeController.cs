@@ -22,17 +22,17 @@ namespace Crop_Deal.Controllers
         #region Add Subscribe
         [HttpPost]
         [Route("AddSubscribe")]
-        [Authorize(Roles = "farmer")]
-        public async Task<ActionResult> AddSubscribeToCrop(SubscribeDTO subscribe)
+        [Authorize(Roles = "dealer")]
+        public async Task<ActionResult> AddSubscribeToCrop([FromBody]SubscribeDTO subscribe)
         {
             try
             {
                 if (await _subscribeServices.AddSubscribeToCrop(subscribe) == false)
                 {
-                    return BadRequest("Already  Subscribed");
+                    return BadRequest();
                 }
 
-                return Ok("Subscribed to Crop successfully");
+                return Ok();
             } catch (Exception ex) {
                 throw;
             }
@@ -41,7 +41,7 @@ namespace Crop_Deal.Controllers
 
         #region Delete the Subscription 
         [HttpDelete]
-        [Route("DeleteSubscribe")]
+        [Route("DeleteSubscribe/{subscribeid}")]
         [Authorize(Roles = "dealer")]
         public async Task<ActionResult> DeleteSubscribeToCrop(int subscribeid)
         {
@@ -49,15 +49,31 @@ namespace Crop_Deal.Controllers
             {
                 if (await _subscribeServices.DeleteSubscribeToCrop(subscribeid) == false)
                 {
-                    return BadRequest("Subscription doesn't already exist");
+                    return BadRequest();
                 }
 
-                return Ok("Deleted Subscription to Crop successfully");
+                return Ok();
             }
             catch (Exception ex)
             {
                 throw;
             }
+        }
+        #endregion
+
+        #region Get All Subscribed crops By User Id
+
+        [HttpGet]
+        [Route("SubscribedCropByUserId/{id}")]
+        [Authorize(Roles = "dealer")]
+        public async Task<ActionResult<Subscribe>> SubscribeByUserId(int id)
+        {
+            var result = await _subscribeServices.SubscribeByUserId(id);
+            if(result != null)
+            {
+                return Ok(result);
+            }
+            return NotFound(result);
         }
         #endregion
 
@@ -108,7 +124,6 @@ namespace Crop_Deal.Controllers
         #endregion
 
         #region Update The Subscribe Details 
-
         [HttpPut]
         [Route("UpdateSubscribe")]
         [Authorize(Roles = "dealer,admin")]
@@ -129,26 +144,6 @@ namespace Crop_Deal.Controllers
         }
         #endregion
 
-        #region Get All Subscribed crops By User Id
-
-        [HttpGet]
-        [Route("GetSubscribeToCropByUserId")]
-        //[Authorize(Roles = "dealer,admin,farmer")]
-        public async Task<ActionResult<Subscribe>> GetSubscribeToCropByUserId(int userid)
-        {
-            try
-            {
-                
-                var result = _subscribeServices.GetSubscribeToCropByUserId(userid);
-                if(result == null) { return BadRequest(); }
-                return Ok(result);
-
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }
-        #endregion
+        
     }
 }

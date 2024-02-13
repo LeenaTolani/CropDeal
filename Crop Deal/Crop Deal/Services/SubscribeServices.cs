@@ -87,13 +87,12 @@ namespace Crop_Deal.Services
         #endregion
 
         #region Get All Subscribed crops By User Id
-        public async Task<Subscribe> GetSubscribeToCropByUserId(int userid)
+       public async Task<Subscribe> SubscribeByUserId(int id)
         {
             try
             {
-                return await _isubscribe.GetSubscribeToCropByUserId(userid);
-            }
-            catch (Exception ex)
+                return await _isubscribe.SubscribeByUserId(id);
+            } catch(Exception ex)
             {
                 throw;
             }

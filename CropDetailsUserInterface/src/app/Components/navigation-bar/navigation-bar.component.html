@@ -10,43 +10,34 @@
             <button type="button" class="btn btn-success text-white" [routerLink] ="['/User','SearchCrop',searchCrop]" >Search</button>
           </div>
         </div>
-        
       </div>
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-        </span>
-      </button> -->
-
 
       <ul class="navbar-nav ms-auto ">
         <li class="nav-item">
-          <a class="mx-2 text-uppercase" *ngIf="authService.isRole() === null" (click) = "home()"><i class="fa-solid fa-cart-shopping me-1"></i> Home</a>
+          <a class="mx-2 text-uppercase" *ngIf="authService.isRole() === null" (click) = "home()"> Home</a>
         </li>
         <li class="nav-item">
-          <a class="mx-2 text-uppercase" *ngIf="authService.isRole() !== null" (click) = "homeLoggedIn()"><i class="fa-solid fa-cart-shopping me-1"></i> Dashboard</a>
+          <a class="mx-2 text-uppercase" *ngIf="authService.isRole() !== null" (click) = "homeLoggedIn()"> Dashboard</a>
         </li>
         <li class="nav-item" *ngIf="authService.isRole() === null">
-          <a class="mx-2 text-uppercase" (click) = "login()"><i class="fa-solid fa-circle-user me-1"></i> Login</a>
+          <a class="mx-2 text-uppercase" (click) = "login()"> Login</a>
         </li>
         <li class="nav-item" *ngIf="authService.isRole() === null">
-          <a class="mx-2 text-uppercase" (click) ="register()"><i class="fa-solid fa-circle-user me-1"></i> Register</a>
-        </li>
-        
-        <li class="nav-item" *ngIf="authService.isRole() !== null">
-          <a class="mx-2 text-uppercase" (click) ="viewProfile()"><i class="fa-solid fa-circle-user me-1"></i> View Profile</a>
+          <a class="mx-2 text-uppercase" (click) ="register()"> Register</a>
         </li>
         <li class="nav-item" *ngIf="authService.isRole() !== null">
-          <a class=" mx-2 text-uppercase" (click) ="logout()"><i class="fa-solid fa-circle-user me-1"></i> Logout</a>
+          <a class="mx-2 text-uppercase" (click) ="viewProfile()"> View Profile</a>
+        </li>
+        <li class="nav-item" *ngIf="authService.isRole() === 'dealer' && subscribe === null" (click) = "addSubscribe()">      
+          <a class="mx-2 text-uppercase" >Subscribe</a>
+        </li>
+        <li class="nav-item" *ngIf="authService.isRole() === 'dealer' && subscribe !== null" (click) = "UnSubscribe()" >      
+          <a class="mx-2 text-uppercase" >UnSubscribe</a>
+        </li>
+        <li class="nav-item" *ngIf="authService.isRole() !== null">
+          <a class=" mx-2 text-uppercase" (click) ="logout()"> Logout</a>
         </li>
       </ul>
-      <!-- Search for mobile -->
-      <!-- <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block" >
-        <div class="input-group">
-          <span class="border-success input-group-text bg-success text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
-          <input type="text" class="form-control border-success" style="color:#7a7a7a" [(ngModel)] ="searchCrop"  >
-          <button type="button" class="btn btn-success text-white" [routerLink] ="['/User','SearchCrop',searchCrop]" >Search</button>
-        </div>
-      </div> -->
     </div>
   </nav>
 </div>
